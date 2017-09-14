@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/tab_rl"
+        android:layout_weight="1">
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tab_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/tab_separate_imgv"
+            android:layout_width="match_parent"
+            android:layout_height="1px" />
+        <!--android:background="@color/gray" -->
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tab_separate_imgv"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <!-- android:background="@color/bg_app"-->
+
+            <RadioButton
+                android:id="@+id/rbtn_home"
+                style="@style/tabs_style"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableTop="@drawable/tab_home"
+                android:text="1" />
+
+            <RadioButton
+                android:id="@+id/rbtn_classify"
+                style="@style/tabs_style"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/tab_home"
+                android:text="2" />
+
+            <RadioButton
+                android:id="@+id/rbtn_public_interest"
+                style="@style/tabs_style"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/tab_home"
+                android:text="3" />
+
+            <RadioButton
+                android:id="@+id/rbtn_shopcart"
+                style="@style/tabs_style"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/tab_home"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/rbtn_mine"
+                style="@style/tabs_style"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/tab_home"
+                android:text="5" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
